@@ -50,4 +50,30 @@ table {
 	border-spacing: 0;
 }
 
+#main-content { margin:0 auto;
+width:990px;
+}
+
+article { float:left;
+width:50%;
+}
+
+img {  float:left;
+padding:20px;
+}
+
+p { font-family:Arial;
+font-size:14px;
+}
+
+h1 { font-family:Arial;
+font-size:30px;
+font-weight:bold;
+}
+
+h2 { font-family:Arial;
+font-size:20px;
+padding:10px;
+}
+
 
