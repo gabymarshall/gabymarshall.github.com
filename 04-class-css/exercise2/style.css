@@ -69,8 +69,8 @@ nav#top-nav { position:absolute; right:-960px; top:20px; font-family:Calibri; fo
 #top-nav a { font-family:Calibri; font-size:12px; color:#7c5123; text-transform:none; text-decoration:none; }
 #top-nav a:hover { font-family:Calibri; font-size:12px; color:#aeba49; text-transform:none; text-decoration:none; }
 
-nav#main-menu { height:25px; background-color:#7c5123; padding:0 200px; }
-nav#main-menu ul li { display:block; float:left; color:white; padding:3px 3px; background-color:#7c5123; }
+nav#main-menu { height:25px; background-color:#7c5123; padding:3px 180px; }
+nav#main-menu ul li { display:inline-block; float:left; color:white; padding:3px 20px; background-color:#7c5123; }
 nav a { font-family:Helvetica; font-size:16px; color:white; text-transform:uppercase; text-decoration:none; }
 nav a:hover { font-family:Helvetica; font-size:16px; color:#aeba49; text-transform:uppercase; text-decoration:none; }
 
