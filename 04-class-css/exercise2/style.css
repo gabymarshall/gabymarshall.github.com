@@ -63,6 +63,7 @@ body#site-wrapper { float:left; width:960px; margin:0 auto; background-color:#ec
  text-indent:0px;
 }
 
+header { background-color:#ecf2d3; }
 header h1 { visibility:hidden; }
 
 nav#top-nav { position:absolute; right:-960px; top:20px; font-family:Calibri; font-size:12px; font-weight:normal; color:#7c5123; }
@@ -74,23 +75,23 @@ nav#main-menu ul li { display:inline-block; float:left; color:white; padding:3px
 nav a { font-family:Helvetica; font-size:16px; font-weight:bold; color:white; text-transform:uppercase; text-decoration:none; }
 nav a:hover { font-family:Helvetica; font-size:16px; font-weight:bold; color:#aeba49; text-transform:uppercase; text-decoration:none; }
 
-article#page { float:left; width:300px; padding:50px 200px; background-color:white; line-height:1.5em; }
-aside#sidebar { float:left; width:300px; padding:50px 100px; background-color:white; }
+article#page { float:left; width:450px; padding:50px 200px; background-color:white; line-height:1.5em; }
+aside#sidebar { float:left; width:250px; padding:50px 50px; background-color:white; }
 #sidebar h1 { font-family:Helvetica; font-size:16px; color:#7c5123; font-weight:bold; text-transform:uppercase; line-height:1.5em; }
 #sidebar ul li { font-family:Helvetica; font-size:14px; color:#aeba49; line-height:1.5em; }
 
-#page h1 { font-family:Helvetica; font-size:40px; line-height:1.5em; }
-#page h2 { font-family:Helvetica; font-size:16px; font-weight:bold; text-transform:uppercase; line-height:1.5em; }
+#page h1 { font-family:Helvetica; font-size:40px; color:#7c5123; line-height:1.5em; }
+#page h2 { font-family:Helvetica; font-size:16px; font-weight:bold; color:#7c5123; text-transform:uppercase; line-height:1.5em; }
 p { font-family:Calibri; font-size:14px; line-height:1.5em; }
 a { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 a:hover { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 
 #footer-wrapper { position:relative; float:bottom; clear:both; background-color:#7c5123; height:40px; padding:50px 200px; }
-#footer-contact { float:left; width:300px; }
+#footer-contact { float:left; width:450px; }
 #footer-contact h1 { font-family:Calibri; font-size:16px; font-weight:bold; color:#cdc2ab; text-transform:uppercase; }
 #footer-contact p { font-family:Calibri; font-size:12px; color:white; }
 
-section#footer-follow { float:right; width:300px; }
+section#footer-follow { float:right; width:250px; }
 #footer-follow h1 { font-family:Calibri; font-size:16px; color:#cdc2ab; font-weight:bold; text-transform:uppercase; }
 #footer-follow ul li { display:block; float:left; padding:5px; }
 
