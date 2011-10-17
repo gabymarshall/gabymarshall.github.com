@@ -74,14 +74,14 @@ nav#main-menu ul li { display:inline-block; float:left; color:white; padding:3px
 nav a { font-family:Helvetica; font-size:16px; font-weight:bold; color:white; text-transform:uppercase; text-decoration:none; }
 nav a:hover { font-family:Helvetica; font-size:16px; font-weight:bold; color:#aeba49; text-transform:uppercase; text-decoration:none; }
 
-article#page { float:left; width:300px; padding:50px 200px; background-color:white; }
+article#page { float:left; width:300px; padding:50px 200px; background-color:white; line-height:1.5em; }
 aside#sidebar { float:left; width:300px; padding:50px 100px; background-color:white; }
-#sidebar h1 { font-family:Helvetica; font-size:16px; color:#7c5123; text-transform:uppercase; }
-#sidebar ul li { font-family:Helvetica; font-size:14px; color:#aeba49; }
+#sidebar h1 { font-family:Helvetica; font-size:16px; color:#7c5123; font-weight:bold; text-transform:uppercase; line-height:1.5em; }
+#sidebar ul li { font-family:Helvetica; font-size:14px; color:#aeba49; line-height:1.5em; }
 
-#page h1 { font-family:Helvetica; font-size:40px; }
-#page h2 { font-family:Helvetica; font-size:16px; text-transform:uppercase; }
-p { font-family:Calibri; font-size:14px; }
+#page h1 { font-family:Helvetica; font-size:40px; line-height:1.5em; }
+#page h2 { font-family:Helvetica; font-size:16px; font-weight:bold; text-transform:uppercase; line-height:1.5em; }
+p { font-family:Calibri; font-size:14px; line-height:1.5em; }
 a { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 a:hover { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 
