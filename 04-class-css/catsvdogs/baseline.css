@@ -81,7 +81,7 @@ head {
  background-color:white; }
 }
 
-nav { position:relative;
+header { position:relative;
 	  display:block;
 				height:25px;
 				background-color:grey;
