@@ -103,7 +103,7 @@ nav#main-menu { height:25px;
 				  text-transform:uppercase;
 				  text-decoration:none; }
 
-article#page { float:left;
+section#content { float:left;
 			   width:450px;
 			   background-color:white;
 			   line-height:1.5em;
