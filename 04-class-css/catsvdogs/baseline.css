@@ -73,145 +73,65 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-/* Meyer Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Grid */
-
-.onecol {
-width: 4.7%;
-}
-
-.twocol {
-width: 13.2%;
-}
-
-.threecol {
-width: 22.05%;
-}
-
-.fourcol {
-width: 30.6%;
-}
-
-.fivecol {
-width: 39%;
-}
-
-.sixcol {
-width: 48%;
-}
-
-.sevencol {
-width: 56.75%;
-}
-
-.eightcol {
-width: 61.6%;
-}
-
-.ninecol {
-width: 74.05%;
-}
-
-.tencol {
-width: 82%;
-}
-
-.elevencol {
-width: 91.35%;
-}
-
-
-/* Center Content */
-
-.centered { 
-  margin:0 auto;
-  width:960px;
-}
-
-
-/* Clearfix */
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix { display: inline-block; }
-html[xmlns] .clearfix { display: block; }
-* html .clearfix { height: 1%; }
-
-body {
-  margin:0 auto;
-  width:960px;
-}
-
-#site-header h1 a {
+head {
  position:relative;
- display:block; 
- height:100px;
- background:url(images/dogvscat-logo.gif) no-repeat center center; 
- text-indent:-9999px;
- }
- 
-.main-links li a {
- float:left;
- display:inline-block;
- height:25px;
- text-decoration:none;
- }
- 
-#content {
- float:left;
- }
+ display:block;
+ height:200px;
+ background:url(images/dogvscat-logo.gif) no-repeat center center;
+ background-color:white; }
+}
+
+nav { position:relative;
+	  display:block;
+				height:25px;
+				background-color:grey;
+				padding:3px 400px; }
+	nav#top-menu ul li { display:inline-block;
+						  float:top left;
+						  color:white;
+						  padding:3px 20px; }
+	nav a { font-family:Helvetica;
+			font-size:16px;
+			font-weight:bold;
+			color:white;
+			text-transform:uppercase;
+			text-decoration:none; }
+	nav a:hover { font-family:Helvetica;
+				  font-size:16px;
+				  font-weight:bold;
+				  color:black;
+				  text-transform:uppercase;
+				  text-decoration:none; }
+				  
+section#content { position:relative;
+			   background-color:black;
+			   line-height:1.5em;
+			   padding:30px 200px; }
+	.main-post h1 { font-family:Helvetica;
+			   font-size:30px;
+			   color:white;
+			   line-height:1.5em; }
+			   p { font-family:Helvetica;
+		       color:white;
+				    font-size:14px;
+				    line-height:1.5em; }
+	a { font-family:Helvetica;
+		font-size:14px;
+		font-weight:bold;
+		color:grey;
+		text-decoration:none; }
+	a:hover { font-family:Helvetica;
+			  font-size:14px;
+			  font-weight:bold;
+			  color:white;
+			  text-decoration:none; }
+
+.page-footer { position:relative;
+			   float:bottom;
+			   clear:both;
+			   background-color:white;
+			   height:70px;
+			   padding:30px 200px; }
+.page-footer p { font-family:Helvetica;
+			   font-size:10px;
+			   color:black; }
