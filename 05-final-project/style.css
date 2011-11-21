@@ -1,4 +1,4 @@
-
+ 
 /* Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -92,18 +92,33 @@ body { background:url(images/background.png) center center repeat; }
 #nav-wrapper { position:relative;
 			   width:1140px;
 `			   height:100px;
+			   top:115px;
+			   left:360px;
 					}
 nav#main-nav ul li a { display:block;
 					   float:left;
-					 padding:5px;}
-					 margin:30px;
+					 padding:5px;
+					 margin:20px;
+					 font-family:Helvetica, sans-serif;
+					 font-size:1em;
+					 text-transform:none;
+					 text-decoration:none;
+					 color:black;
+					 }
+nav#main-nav ul li a:hover { font-family:Helvetica, sans-serif;
+					 font-size:1em;
+					 text-transform:none;
+					 text-decoration:none;
+					 color:#e6c7f8;
+					 text-shadow:#575656 0px -1px 0px;
 					 }
  
 #content-wrapper { position:relative;
 				   width:1140px;
+				   top:200px;
 				}
 section#page-intro { float:left;
-					 width:300px;
+					 width:250px;
 							  }
 section#page-intro p { font-family:Helvetica, sans-serif;
 					 font-size:1em;
@@ -111,20 +126,20 @@ section#page-intro p { font-family:Helvetica, sans-serif;
 					 text-decoration:none;
 					 color:#575656;
 					 }
-					 a { font-family:Helvetica, sans-serif;
+					section#page-intro a { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
 					 color:black;
 					 }
-					 a:hover { font-family:Helvetica, sans-serif;
+					section#page-intro a:hover { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
 					 color:#e6c7f8;
-					 text-shadow:#ebebeb 0px 1px 0px;
+					 text-shadow:#575656 0px -1px 0px;
 					 }
-.artwork { float:right;
+.artwork { float:left;
 		   display:block;
 		   width:740px;
 		 }
@@ -133,17 +148,21 @@ section#page-intro p { font-family:Helvetica, sans-serif;
 				 padding:5px;
 				 background:white;
 				 border:1px solid #ddd;
+				 box-shadow:#575656 1px 1px 4px;
 				  }
-.artwork a:hover img.highlight { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-							-moz-opacity: 0.8;
-							opacity: 0.8;
-							}
 
-#footer-wrapper { display:block;
+#footer-wrapper { position:absolute;
+				  display:block;
 				  clear:both;
-				  height:10px;
+				  width:1140px;
 				  bottom:0px;
 				}
+#footer-wrapper p { font-family:Helvetica, sans-serif;
+				    font-size:1em;
+					 text-transform:none;
+					 text-decoration:none;
+					 color:#575656;
+					 }
 #btm-nav ul li a img { float:left;
 					   margin:5px;
 								}
