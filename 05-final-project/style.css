@@ -113,10 +113,10 @@ nav#main-nav ul li a:hover { font-family:Helvetica, sans-serif;
 					 }
  
 #content-wrapper { position:relative;
+				   width:960px;
 				   top:200px;
 				}
-section#page-intro { width:300px;
-					 }
+
 section#page-intro p { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
@@ -136,7 +136,7 @@ section#page-intro p { font-family:Helvetica, sans-serif;
 					 color:#cbb7d7;
 					 }
 section#artwork ul li a { float:left;
-						  margin:5px;
+						  margin:5px 5px;
 						}
 					 
 .hover_caption {
