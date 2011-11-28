@@ -54,8 +54,9 @@ table {
 width:990px;
 }
 
-article { float:left;
-width:50%;
+article#dogs, article#cats { float:left;
+width:450px;
+margin:10px;
 }
 
 img {  float:left;
