@@ -103,7 +103,7 @@ nav#main-nav ul li a { display:block;
 					 font-size:1.25em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:#c5c5c4;
+					 color:#575656;
 					 }
 nav#main-nav ul li a:hover { font-family:Helvetica, sans-serif;
 					 font-size:1.25em;
@@ -116,6 +116,7 @@ nav#main-nav ul li a:hover { font-family:Helvetica, sans-serif;
 				   top:200px;
 				}
 section#page-intro { width:300px;
+					 float:left;
 					 }
 section#page-intro p { font-family:Helvetica, sans-serif;
 					 font-size:1em;
@@ -123,31 +124,72 @@ section#page-intro p { font-family:Helvetica, sans-serif;
 					 text-decoration:none;
 					 color:#c5c5c4;
 					 }
-					section#page-intro a { font-family:Helvetica, sans-serif;
+					section#page-intro a { font-family:Georgia, serif;
+					 font-style:italic;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
 					 color:#575656;
 					 }
-					section#page-intro a:hover { font-family:Helvetica, sans-serif;
+					section#page-intro a:hover { font-family:Georgia, serif;
+					 font-style:italic;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
 					 color:#cbb7d7;
 					 }
-section#artwork ul li a { float:left;
+section#artwork { width:500px;
+				  float:left;
+					 }
+section#artwork ul li { float:left;
 						  margin:5px;
-						}
+						  box-shadow:2px 2px 2px rgb(200,200,200);
+						}					 
 					 
+section#artwork ul li a  {
+                       display:block;
+                       height:100px;
+                       position:relative;
+                       text-decoration:none;
+						}
+					
+					 
+section#artwork ul li a .caption {
+                       display:none;
+                       position:absolute;
+                       top:0px;
+                       left:0px;
+                       width:100%;
+                       height:100%;
+                       background-color:rgba(203,183,215,0.9);
+                       
+                       color:white;
+                       text-align:center;
+                       z-index:10;
+						}
+	
+section#artwork ul li a .caption-text {
+font-family:Georgia;
+font-style:italic;
+size:16px;
+  padding:40px 0px;
+  text-decoration:none;
+}
+	
+	section#artwork ul li a:hover .caption {
+	   display:block;
+	}
+					
+					
 .hover_caption {
 background-image:url(images/hover_caption_bg.png);
-/* NOTE: if you're img elements have paddings
+/* NOTE: if your img elements have paddings
 or margins you'll need to match them here
 to get things lined up properly. */
 }
 
 #footer-wrapper { position:absolute;
-				  display:block;
+				  display:inline-block;
 				  width:960px;
 				  bottom:0px;
 				}
@@ -157,6 +199,6 @@ to get things lined up properly. */
 					 text-decoration:none;
 					 color:#c5c5c4;
 					 }
-#btm-nav ul li a img { float:left;
+#btm-nav ul li a { float:left;
 					   margin:5px;
 								}

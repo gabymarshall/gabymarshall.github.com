@@ -9,21 +9,16 @@
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
    
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" charset="utf-8"></script>
-  <script src="jquery.hover_caption.js" type="text/javascript" charset="utf-8"></script>
-
 
 <script>
-$(document).ready(function() {
-$('img').hover_caption();
+$(function() {
+
+$('img').each(function() {
+  $("<div class='caption'></div>").html("<div class='caption-text'>" + $(this).attr('title') + "</div>").appendTo($(this).parent());;
 });
 
-$('img').hover_caption({
-caption_font_size: '1em',
-caption_font_family: 'Helvetica',
-caption_color: 'white',
-caption_bold: false,
-caption_default: "Caption"
 });
+
 </script>
 </head>
 
@@ -52,19 +47,19 @@ caption_default: "Caption"
         <p> My name is <a href='about.html'>Gaby</a>, by the way. Feel free to say <a href='contact.html'>hello</a>.</p>
     </section>
     
-    <section id='artwork'><ul>
- 	<li><a href='photography.html'><img src='images/photography/ola-thumb.png' alt='Ola' title='Ola'></a></li>
+    <section id='artwork' class='clearfix'><ul>
+ 	<li><a href='photography.html'><img src='images/photography/ola-thumb.jpg' alt='Ola' title='Ola'></a></li>
  	<li><a href='#'><img src='images/photography/natefisheye-thumb.png' alt='Nate' title='Siblings'></a></li>
 	<li><a href='#'><img src='images/design/focus-thumb.png' alt='Focus' title='Focus'></a></li>
-	<li><a href='#'><img src='images/photography/leaves-thumb.png' alt='Leaves'></a></li>
+	<li><a href='#'><img src='images/photography/leaves-thumb.png' alt='Leaves' title='Leaves'></a></li>
 	<li><a href='#'><img src='images/photography/carissa1-thumb.png' alt='Carissa'></a></li>
-	<li><a href='#'><img src='images/photography/building1-thumb.png' alt='Building'></a></li>
+	<li><a href='#'><img src='images/photography/building1-thumb.jpg' alt='Building'></a></li>
 	<li><a href='#'><img src='images/photography/streetrace-thumb.png' alt='Streetrace'></a></li>
-	<li><a href='#'><img src='images/design/YRWe-thumb.png' alt='Y R We'></a></li>
-	<li><a href='#'><img src='images/photography/babcia-thumb.png' alt='Babcia'></a></li>
-	<li><a href='#'><img src='images/photography/bokeh-thumb.png' alt='Bokeh'></a></li>
-	<li><a href='#'><img src='images/design/empower-thumb.png' alt='Empower'></a></li>
-	<li><a href='#'><img src='images/design/invisiblecity-thumb.png' alt='Invisible City'></a></li>
+	<li><a href='#'><img src='images/design/YRWe-thumb.png' alt='y r We' title='y r We'></a></li>
+	<li><a href='#'><img src='images/photography/babcia-thumb.jpg' alt='Babcia'></a></li>
+	<li><a href='#'><img src='images/photography/bokeh-thumb.jpg' alt='Bokeh'></a></li>
+	<li><a href='#'><img src='images/design/empower-thumb.png' alt='Empower' title='Empower'></a></li>
+	<li><a href='#'><img src='images/design/invisiblecity-thumb.jpg' alt='Invisible City'></a></li>
 	</ul>
     </section>
     </div> <!-- end #content-wrapper -->
