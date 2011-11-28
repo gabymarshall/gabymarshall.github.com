@@ -80,88 +80,82 @@ header#header h1 { position:absolute;
 				   }
 header#header h1 a { display:block;
 					 background:url(images/logo.png) top center no-repeat;
-					 width:1140px;
-				     height:110px;
+					 width:960px;
+				     height:90px;
 				     text-indent:-9999px; }
 #header h1 a:hover { background:url(images/hoverlogo.png) top center no-repeat;
 				 }
 
-body { background:url(images/background.png) center center repeat; }
+body { background:url(images/background-3.png) center center repeat; }
 
 
 #nav-wrapper { position:relative;
-			   width:1140px;
-`			   height:100px;
+			   width:960px;
+`			   height:90px;
 			   top:115px;
-			   left:360px;
+			   left:242px;
 					}
 nav#main-nav ul li a { display:block;
 					   float:left;
 					 padding:5px;
 					 margin:20px;
 					 font-family:Helvetica, sans-serif;
-					 font-size:1em;
+					 font-size:1.25em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:black;
+					 color:#c5c5c4;
 					 }
 nav#main-nav ul li a:hover { font-family:Helvetica, sans-serif;
-					 font-size:1em;
+					 font-size:1.25em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:#e6c7f8;
-					 text-shadow:#575656 0px -1px 0px;
+					 color:#cbb7d7;
 					 }
  
 #content-wrapper { position:relative;
-				   width:1140px;
 				   top:200px;
 				}
-section#page-intro { float:left;
-					 width:250px;
-							  }
+section#page-intro { width:300px;
+					 }
 section#page-intro p { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:#575656;
+					 color:#c5c5c4;
 					 }
 					section#page-intro a { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:black;
+					 color:#575656;
 					 }
 					section#page-intro a:hover { font-family:Helvetica, sans-serif;
 					 font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:#e6c7f8;
-					 text-shadow:#575656 0px -1px 0px;
+					 color:#cbb7d7;
 					 }
-.artwork { float:left;
-		   display:block;
-		   width:740px;
-		 }
-.artwork a img { float:left;
-				 margin:10px;
-				 padding:5px;
-				 background:white;
-				 border:1px solid #ddd;
-				 box-shadow:#575656 1px 1px 4px;
-				  }
+section#artwork ul li a { float:left;
+						  margin:5px;
+						}
+					 
+.hover_caption {
+background-image:url(images/hover_caption_bg.png);
+/* NOTE: if you're img elements have paddings
+or margins you'll need to match them here
+to get things lined up properly. */
+}
 
 #footer-wrapper { position:absolute;
 				  display:block;
-				  clear:both;
-				  width:1140px;
+				  width:960px;
 				  bottom:0px;
 				}
 #footer-wrapper p { font-family:Helvetica, sans-serif;
 				    font-size:1em;
 					 text-transform:none;
 					 text-decoration:none;
-					 color:#575656;
+					 color:#c5c5c4;
 					 }
 #btm-nav ul li a img { float:left;
 					   margin:5px;
