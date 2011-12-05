@@ -7,44 +7,55 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+   
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" charset="utf-8"></script>
+
+<script>
+$(function() {
+
+$('img').each(function() {
+  $("<div class='caption'></div>").html("<div class='caption-text'>" + $(this).attr('title') + "</div>").appendTo($(this).parent());;
+});
+
+});
+
+</script>
 </head>
 
 <body>
 <div id='site-wrapper'>
-<header id='site-header'>
-  <h1><a href='#home'>Gabriela Marshall</a></h1>
+<header id='header'>
+  <h1><a href='index.html'>Gabriela Marshall</a></h1>
 </header>
 </div> <!-- end #site-wrapper -->
 
-<div id='main-nav'>
-<nav id='top-nav'>
+<div id='nav-wrapper'>
+<nav id='main-nav'>
 		<ul>
-			<li><a href='#design'>desgin</a></li>
-			<li><a href='#photography'>photography</a></li>
-			<li><a href='#about'>about</a></li>
-			<li><a href='#contact'>contact</a></li>
+			<li><a href='design.html'>desgin</a></li>
+			<li><a href='photography.html'>photography</a></li>
+			<li><a href='about.html'>about</a></li>
+			<li><a href='contact.html'>contact</a></li>
 		</ul>
 		</nav>
-	</div>
-
-</div> <!-- end #menu-wrapper -->
+		</div> <!-- end #menu-wrapper -->
 
 <div id='content-wrapper'>
-  <div id='photography'>
-  <ul>
-	<li><a href='#'><img src='images/photography/ola-thumb.png' alt='Ola'></ai></li>
-	<li><a href='#'><img src='images/photography/natefisheye-thumb.png' alt='Nate'></ai></li>
-	<li><a href='#'><img src='images/photography/leaves-thumb.png' alt='Leaves'></ai></li>
-	<li><a href='#'><img src='images/photography/carissa1-thumb.png' alt='Carissa'></ai></li>
-	<li><a href='#'><img src='images/photography/building1-thumb.png' alt='Building'></ai></li>
-	<li><a href='#'><img src='images/photography/streetrace-thumb.png' alt='Streetrace'></ai></li>
-	<li><a href='#'><img src='images/photography/babcia-thumb.png' alt='Babcia'></ai></li>
-	<li><a href='#'><img src='images/photography/bokeh-thumb.png' alt='Bokeh'></ai></li>
-	<li><a href='#'><img src='images/photography/nyc-thumb.png' alt='Leaving NYC'></ai></li>
-	<li><a href='#'><img src='images/photography/spiderweb-thumb.png' alt='Along Came a Spider'></ai></li>
-	
-	
-    </div>
+    <section id='artwork' class='clearfix'><ul>
+ 	<li><a href='photography.html' rel="shadowbox"><img src='images/photography/ola-thumb.jpg' alt='Ola' title='Ola'></a></li>
+ 	<li><a href='#'><img src='images/photography/natefisheye-thumb.png' alt='Nate' title='Siblings'></a></li>
+	<li><a href='#'><img src='images/photography/filip-thumb.jpg' alt='Filip and Wodek' title='Filip and Wodek'></a></li>
+	<li><a href='#'><img src='images/photography/leaves-thumb.png' alt='Leaves' title='Leaves'></a></li>
+	<li><a href='#'><img src='images/photography/carissa1-thumb.png' alt='Carissa'></a></li>
+	<li><a href='#'><img src='images/photography/building1-thumb.jpg' alt='Building'></a></li>
+	<li><a href='#'><img src='images/photography/streetrace-thumb.png' alt='Streetrace'></a></li>
+	<li><a href='#'><img src='images/photography/gotgame-thumb.jpg' alt='Got Game?' title='Got Game?'></a></li>
+	<li><a href='#'><img src='images/photography/babcia-thumb.jpg' alt='Babcia'></a></li>
+	<li><a href='#'><img src='images/photography/bokeh-thumb.jpg' alt='Bokeh'></a></li>
+	<li><a href='#'><img src='images/photography/chipmunk-thumb.jpg' alt='Little Buddy' title='Little Buddy'></a></li>
+	<li><a href='#'><img src='images/photography/aesha-thumb.jpg' alt='Aesha' title='Aesha'></a></li>
+	</ul>
+    </section>
     </div> <!-- end #content-wrapper -->
     
 <div id='footer-wrapper'>
@@ -54,11 +65,11 @@
 			<li><a href="http://www.flickr.com/photos/gabymarshall/"><img src='images/flickr.png' alt='flickr'></a></li>
 			<li><a href="http://vimeo.com/gabymarshall"><img src='images/vimeo.png' alt='viemo'></a></li>
 			<li><a href="http://www.facebook.com/pages/Gaby-Marshall"><img src='images/facebook.png' alt='facebook'></a></li>
-			<li><a href="http://www.gabrielamarshall.net/feed/"><img src='images/rss.png' alt='feed'></a></li>
+			<li><a href='http://www.gabrielamarshall.net/feed/'><img src='images/rsshover.png' alt='feed'></a></li>
 		</ul>
 	</div>
 
-<p>copyright 2011 Gabriela Marshall</p>
+<p>&copy; 2011 Gabriela Marshall</p>
 </div>
 
 

@@ -153,10 +153,8 @@ body {
 
 #site-header h1 a {
  position:relative;
- display:block; 
+ font-family:LeagueGothic; 
  height:100px;
- background:url(images/dogvscat-logo.gif) no-repeat center center; 
- text-indent:-9999px;
  }
  
 .main-links li a {

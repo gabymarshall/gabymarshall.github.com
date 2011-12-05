@@ -173,6 +173,53 @@ table {
 	border-spacing: 0;
 }
 
+/* Grid */
+
+.onecol {
+width: 4.7%;
+}
+
+.twocol {
+width: 13.2%;
+}
+
+.threecol {
+width: 22.05%;
+}
+
+.fourcol {
+width: 30.6%;
+}
+
+.fivecol {
+width: 39%;
+}
+
+.sixcol {
+width: 48%;
+}
+
+.sevencol {
+width: 56.75%;
+}
+
+.eightcol {
+width: 61.6%;
+}
+
+.ninecol {
+width: 74.05%;
+}
+
+.tencol {
+width: 82%;
+}
+
+.elevencol {
+width: 91.35%;
+}
+
+
 /* Center Content */
 
 .centered { 
@@ -197,7 +244,7 @@ html[xmlns] .clearfix { display: block; }
 
 body {
   margin:0 auto;
-  width:960px;
+  width:100%;
 }
 
 #site-header h1 a {
@@ -209,7 +256,7 @@ body {
  }
  
 #top-menu .main-nav li a {
- position:absolute;
+float:top;
  display:block;
  height:25px;
  }
@@ -230,28 +277,28 @@ body#site-wrapper { background-color:#ecf2d3; }
  text-indent:-999px;
 }
 
-#site-header#top-nav { position:absolute;
+#site-header#top-nav { float:top;
 			  display:block;
 			  font-family:Calibri;
-			  font-size:12px;
+			  font-size:2em;
 			  font-weight:normal;
 			  color:#7c5123;
 }
-	#top-nav a { position:absolute;
+	#top-nav a { float:top;
 				 font-family:Calibri;
-				 font-size:12px;
+				 font-size:1em;
 				 font-weight:normal;
 				 color:#7c5123;
 				 text-transform:none;
 				 text-decoration:none; }
 	#top-nav a:hover { font-family:Calibri;
-					   font-size:12px;
+					   font-size:1em;
 					   font-weight:normal;
 					   color:#aeba49;
 					   text-transform:none;
 					   text-decoration:none; }
 
-nav#main-menu { height:25px;
+nav#main-menu { height:1em;
 				background-color:#7c5123;
 				padding:3px 180px; }
 	nav#main-menu ul li { display:inline-block;
@@ -260,50 +307,50 @@ nav#main-menu { height:25px;
 						  padding:3px 20px;
 						  background-color:#7c5123; }
 	nav a { font-family:Helvetica;
-			font-size:16px;
+			font-size:1em;
 			font-weight:bold;
 			color:white;
 			text-transform:uppercase;
 			text-decoration:none; }
 	nav a:hover { font-family:Helvetica;
-				  font-size:16px;
+				  font-size:1em;
 				  font-weight:bold;
 				  color:#aeba49;
 				  text-transform:uppercase;
 				  text-decoration:none; }
 
 article#page { float:left;
-			   width:450px;
+			   width:40%;
 			   background-color:white;
 			   line-height:1.5em;
 			   padding:30px 200px; }
 	#page h1 { font-family:Helvetica;
-			   font-size:40px;
+			   font-size:2em;
 			   color:#7c5123;
 			   line-height:1.5em; }
 	#page h2 { font-family:Helvetica;
-			   font-size:16px;
+			   font-size:2em;
 			   font-weight:bold;
 			   color:#7c5123;
 			   text-transform:uppercase;
 			   line-height:1.5em; }
 	p { font-family:Calibri;
-				    font-size:14px;
+				    font-size:1em;
 				    line-height:1.5em; }
 	a { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 	a:hover { font-family:Helvetica; font-size:14px; font-weight:bold; color:#7c5123; text-decoration:none; }
 
-aside#sidebar { float:left; width:250px; padding:30px; background-color:white; }
+aside#sidebar { float:left; width:20%; padding:30px; background-color:white; }
 	#sidebar h1 { font-family:Helvetica; font-size:16px; color:#7c5123; font-weight:bold; text-transform:uppercase; line-height:1.5em; }
 	#sidebar ul li { font-family:Helvetica; font-size:14px; color:#aeba49; line-height:1.5em; }
 	
-#footer-wrapper { position:relative; float:bottom; clear:both; background-color:#7c5123; height:70px; padding:30px 200px; }
+#footer-wrapper { float:bottom; clear:both; background-color:#7c5123; height:70px; padding:30px 200px; }
 
-#footer-contact { float:left; width:450px; }
+#footer-contact { float:left; width:100%; }
 	#footer-contact h1 { font-family:Calibri; font-size:16px; font-weight:bold; color:#cdc2ab; text-transform:uppercase; }
 	#footer-contact p { font-family:Calibri; font-size:12px; color:white; }
 
-section#footer-follow { float:left; width:250px; }
+section#footer-follow { float:left; width:100% }
 	#footer-follow h1 { font-family:Calibri; font-size:16px; color:#cdc2ab; font-weight:bold; text-transform:uppercase; }
 	#footer-follow ul li { display:block; float:left; padding:5px; }
 
