@@ -6,33 +6,89 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+<script type="text/javascript" src="js/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
+</script>
 </head>
 
 <body>
 <div id='site-wrapper'>
-<header id='site-header'>
-  <h1><a href='#home'>Gabriela Marshall</a></h1>
+<header id='header'>
+  <h1><a href='index.html'>Gabriela Marshall</a></h1>
 </header>
 </div> <!-- end #site-wrapper -->
 
-<div id='main-nav'>
-<nav id='top-nav'>
+<div id='nav-wrapper'>
+	<nav id='main-nav'>
 		<ul>
-			<li><a href="#design">desgin</a></li>
-			<li><a href="#photography">photography</a></li>
-			<li><a href="#about">about</a></li>
-			<li><a href="#contact">contact</a></li>
+			<li><a href='design.html'>design</a></li>
+			<li><a href='photography.html'>photography</a></li>
+			<li><a href='about.html'>about</a></li>
+			<li><a href='contact.html'>contact</a></li>
 		</ul>
-		</nav>
-	</div>
-
+	</nav>
 </div> <!-- end #menu-wrapper -->
 
 <div id='content-wrapper'>
-  <div id='content'>
-    <article id='page'>
-        <p>If you’re interested, I’d love to hear from you.</p>
+         <div id="contact-form">    
+
+<form id="contact" method="post" action="somewhere.php">
+<fieldset>    
+
+	<label for="name">Name</label>
+	<input type="text" name="contact[name]" placeholder="your name">
+
+	<label for="email">E-mail</label>
+	<input type="email" name="contact[email]" placeholder="e-mail">
+
+	<label for="phone">Message</label>
+	<textarea name="contact[message]" placeholder="hello"></textarea>
+
+
+<input type="submit" name="submit" id="submit" value="Send" />
+
+</fieldset>
+</form>
+
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 250,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#c5c5c4',
+      links: '#c47cc4'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('@gabbernator').start();
+</script>
+</div>
+<style>
+label {display:block;}
+input, textarea { display:block;}
+</style>
+        
+        
 		<p><a href="mailto:contact@gabrielamarshall.net">contact@gabrielamarshall.net</a></p>
 
 		<p>Find me other places!</p>
@@ -54,11 +110,11 @@
 			<li><a href="http://www.flickr.com/photos/gabymarshall/"><img src='images/flickr.png' alt='flickr'></a></li>
 			<li><a href="http://vimeo.com/gabymarshall"><img src='images/vimeo.png' alt='viemo'></a></li>
 			<li><a href="http://www.facebook.com/pages/Gaby-Marshall"><img src='images/facebook.png' alt='facebook'></a></li>
-			<li><a href="http://www.gabrielamarshall.net/feed/"><img src='images/rss.png' alt='feed'></a></li>
+			<li><a href='http://www.gabrielamarshall.net/feed/'><img src='images/rss.png' alt='feed'></a></li>
 		</ul>
 	</div>
 
-<p>copyright 2011 Gabriela Marshall</p>
+<p>&copy; 2011 Gabriela Marshall</p>
 </div>
 
 

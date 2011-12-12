@@ -6,19 +6,12 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-   
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" charset="utf-8"></script>
-
-<script>
-$(function() {
-
-$('img').each(function() {
-  $("<div class='caption'></div>").html("<div class='caption-text'>" + $(this).attr('title') + "</div>").appendTo($(this).parent());;
-});
-
-});
-
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+<script type="text/javascript" src="js/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
 </script>
 </head>
 
@@ -30,30 +23,30 @@ $('img').each(function() {
 </div> <!-- end #site-wrapper -->
 
 <div id='nav-wrapper'>
-<nav id='main-nav'>
+	<nav id='main-nav'>
 		<ul>
-			<li><a href='design.html'>desgin</a></li>
+			<li><a href='design.html'>design</a></li>
 			<li><a href='photography.html'>photography</a></li>
 			<li><a href='about.html'>about</a></li>
 			<li><a href='contact.html'>contact</a></li>
 		</ul>
-		</nav>
-		</div> <!-- end #menu-wrapper -->
+	</nav>
+</div> <!-- end #menu-wrapper -->
 
-<div id='content-wrapper'>
-    <section id='artwork' class='clearfix'><ul>
- 	<li><a href='photography.html' rel="shadowbox"><img src='images/photography/ola-thumb.jpg' alt='Ola' title='Ola'></a></li>
- 	<li><a href='#'><img src='images/photography/natefisheye-thumb.png' alt='Nate' title='Siblings'></a></li>
-	<li><a href='#'><img src='images/photography/filip-thumb.jpg' alt='Filip and Wodek' title='Filip and Wodek'></a></li>
-	<li><a href='#'><img src='images/photography/leaves-thumb.png' alt='Leaves' title='Leaves'></a></li>
-	<li><a href='#'><img src='images/photography/carissa1-thumb.png' alt='Carissa'></a></li>
-	<li><a href='#'><img src='images/photography/building1-thumb.jpg' alt='Building'></a></li>
-	<li><a href='#'><img src='images/photography/streetrace-thumb.png' alt='Streetrace'></a></li>
-	<li><a href='#'><img src='images/photography/gotgame-thumb.jpg' alt='Got Game?' title='Got Game?'></a></li>
-	<li><a href='#'><img src='images/photography/babcia-thumb.jpg' alt='Babcia'></a></li>
-	<li><a href='#'><img src='images/photography/bokeh-thumb.jpg' alt='Bokeh'></a></li>
-	<li><a href='#'><img src='images/photography/chipmunk-thumb.jpg' alt='Little Buddy' title='Little Buddy'></a></li>
-	<li><a href='#'><img src='images/photography/aesha-thumb.jpg' alt='Aesha' title='Aesha'></a></li>
+<div id='content-wrapper' class='clearfix'>
+    <section id='artwork'><ul>
+ 	<li><a href='images/photography/ola.jpg' rel='shadowbox' title='Ola'><img src='images/photography/ola-thumb.jpg' title='Ola'></a></li>
+ 	<li><a href='images/photography/natefisheye.jpg' rel='shadowbox' title='Nate'><img src='images/photography/natefisheye-thumb.jpg' title='Nate'></a></li>
+	<li><a href='images/photography/filip.jpg' rel='shadowbox' title='Filip & Wodek'><img src='images/photography/filip-thumb.jpg' title='Filip & Wodek'></a></li>
+	<li><a href='images/photography/leaves.jpg' rel='shadowbox' title='Caitlin'><img src='images/photography/leaves-thumb.jpg' title='Caitlin'></a></li>
+	<li><a href='images/photography/carissa1.jpg' rel='shadowbox' title='Carissa'><img src='images/photography/carissa1-thumb.jpg' title='Carissa'></a></li>
+	<li><a href='images/photography/building1.jpg' rel='shadowbox' title='I Spy'><img src='images/photography/building1-thumb.jpg' title='I Spy'></a></li>
+	<li><a href='images/photography/streetrace.jpg' rel='shadowbox' title='Streetrace'><img src='images/photography/streetrace-thumb.jpg' title='Streetrace'></a></li>
+	<li><a href='images/photography/aesha.jpg' rel='shadowbox' title='Aesha'><img src='images/photography/aesha-thumb.jpg' title=''></a></li>
+	<li><a href='images/photography/babcia.jpg' rel='shadowbox' title='Babcia'><img src='images/photography/babcia-thumb.jpg' alt='Babcia'></a></li>
+	<li><a href='images/photography/bokeh.jpg' rel='shadowbox' title='Christmas in Cambridge'><img src='images/photography/bokeh-thumb.jpg' alt='Christmas in Cambridge' title='Christmas in Cambridge'></a></li>
+	<li><a href='images/photography/chipmunk.jpg' rel='shadowbox' title=''><img src='images/photography/chipmunk-thumb.jpg' title=''></a></li>
+	<li><a href='images/photography/nyc.jpg' rel='shadowbox' title='Leaving'><img src='images/photography/nyc-thumb.jpg' title='Leaving'></a></li>
 	</ul>
     </section>
     </div> <!-- end #content-wrapper -->
@@ -65,7 +58,7 @@ $('img').each(function() {
 			<li><a href="http://www.flickr.com/photos/gabymarshall/"><img src='images/flickr.png' alt='flickr'></a></li>
 			<li><a href="http://vimeo.com/gabymarshall"><img src='images/vimeo.png' alt='viemo'></a></li>
 			<li><a href="http://www.facebook.com/pages/Gaby-Marshall"><img src='images/facebook.png' alt='facebook'></a></li>
-			<li><a href='http://www.gabrielamarshall.net/feed/'><img src='images/rsshover.png' alt='feed'></a></li>
+			<li><a href='http://www.gabrielamarshall.net/feed/'><img src='images/rss.png' alt='feed'></a></li>
 		</ul>
 	</div>
 
