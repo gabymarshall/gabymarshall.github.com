@@ -121,10 +121,12 @@ article#page-intro { width:250px;
 					float:left;
 					padding-right:50px;
 }
-#contact-form a { width:250px;
-					display:block;
-					float:left;
-					padding-right:50px;
+#contact-form ul li a { font-family:Georgia, serif;
+					 font-style:italic;
+					 font-size:1em;
+					 text-transform:none;
+					 text-decoration:none;
+					 color:#575656;
 }
 article#page-intro p { font-family:Helvetica, sans-serif;
 					 font-size:1em;
